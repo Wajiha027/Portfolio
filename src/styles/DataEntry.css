@@ -1,0 +1,179 @@
+/* ===== Page Layout ===== */
+.data-entry {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* ===== Dark Mode Support ===== */
+body.dark-mode .data-entry {
+  background: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+/* ===== Headings ===== */
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Bigger "Portfolio Data Entry" heading */
+}
+
+h2, h3 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* ===== Form Inputs ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ===== Inputs and Textareas ===== */
+input[type="text"],
+input[type="file"],
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.2s;
+  color: #000; /* Light mode text */
+  background: #fff;
+}
+
+/* ===== Dark Mode Input Fix ===== */
+body.dark-mode input[type="text"],
+body.dark-mode input[type="file"],
+body.dark-mode textarea {
+  color: #fff;
+  background: #2a2a2a;
+  border: 1px solid #555;
+}
+
+/* ===== Input Focus Effect ===== */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* ===== Profile Picture Preview ===== */
+img {
+  margin: 15px auto;
+  display: block;
+  border: 3px solid #007bff;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* ===== Add Project/Social Button ===== */
+button[type="button"] {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 5px 0;
+}
+
+/* Hover */
+button[type="button"]:hover {
+  background: #218838;
+}
+
+/* ===== Submit Button ===== */
+button[type="submit"] {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s;
+}
+
+/* Hover */
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.9rem;
+}
+
+/* Hover */
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* ===== Project and Social Inputs ===== */
+.project-input,
+.social-input {
+  background: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+/* Dark Mode Project/Social Inputs */
+body.dark-mode .project-input,
+body.dark-mode .social-input {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover */
+.project-input:hover,
+.social-input:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .data-entry {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

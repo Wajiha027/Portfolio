@@ -1,0 +1,67 @@
+/* ===== Contact Section ===== */
+.contact-section {
+  padding: 40px;
+  text-align: center;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Form Inputs ===== */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* ===== Submit Button ===== */
+.contact-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ===== Button Hover ===== */
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* ===== Success Message ===== */
+.success-message {
+  color: green;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* ===== Loader Animation ===== */
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

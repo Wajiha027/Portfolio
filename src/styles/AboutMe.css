@@ -1,0 +1,154 @@
+/* ====== General About Me Section ====== */
+.about-me {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+/* Dark Mode Support */
+body.dark-mode .about-me {
+  background: #2c2c2c;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ====== Name ====== */
+.about-name {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Dark Mode */
+body.dark-mode .about-name {
+  color: #00d1b2;
+}
+
+/* ====== Headings ====== */
+h2,
+h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Dark Mode Headings */
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #00d1b2;
+}
+
+/* ====== About Me Container ====== */
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+/* ====== Profile Picture ====== */
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Hover Effect */
+.profile-pic img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Bio ====== */
+.bio {
+  max-width: 700px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Dark Mode Bio */
+body.dark-mode .bio {
+  color: #cccccc;
+}
+
+/* ====== Skills & Interests ====== */
+.skills,
+.interests {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Skill & Interest List */
+.skills ul,
+.interests ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Skill & Interest Tags */
+.skills li,
+.interests li {
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.skills li:hover,
+.interests li:hover {
+  transform: scale(1.1);
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 20px;
+  }
+
+  .about-name {
+    font-size: 2rem;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+}

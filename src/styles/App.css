@@ -1,0 +1,47 @@
+/* App Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content Section */
+.content {
+  flex: 1;
+}
+
+/* Sticky Footer */
+.footer {
+  margin-top: auto;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* ===== Dark Mode Toggle - Fixed Right Side ===== */
+.dark-mode-toggle {
+  position: fixed;
+  top: 70px; /* Adjusted from 20px to 70px to move it lower */
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Button Style */
+.dark-mode-toggle button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+/* Hover Effect */
+.dark-mode-toggle button:hover {
+  background: #0056b3;
+}
